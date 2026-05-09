@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sachin Dimri Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sachin Dimri</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="hero-name">
+    I'm <span>Sachin Dimri</span>
+</h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist ',
+						'Machine Learning Enthusiast ',
+						'Statistician ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2 class="hero-tagline">
+    Building AI Solutions with Data, Statistics & Intelligence
+</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/sonudimri?tab=repositories" class="btn btn-primary py-3 px-4">My works</a> 
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sachin Dimri</span></p>
+										<p><span class="title-s">Institute: </span> <span>IIT Bombay</span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Scientist & Machine Learning</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>NLP & GenAI</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am an MSc Applied Statistics and Informatics student at IIT Bombay with strong interests in Data Science, Machine Learning, Artificial Intelligence, and Statistical Modeling. I enjoy solving real-world problems using data-driven approaches and have worked on projects involving NLP, Time Series Forecasting, Predictive Modeling, Customer Segmentation, and Generative AI applications using Python, SQL, Scikit-learn, XGBoost, ARIMA/SARIMA, and LangChain.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; AI</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>AI, Machine Learning & Statistical Modeling</span></li>
+									<li class="d-flex"><span>Education:</span> <span>MSc Applied Statistics & Informatics, IIT Bombay</span></li>
+									<li class="d-flex"><span>Language:</span> <span>Python, R, SQL</span></li>
+									<li class="d-flex"><span>ML Skills:</span> <span>Machine Learning, NLP, Deep Learning &amp; GenAI</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Power BI, Excel, Streamlit, GitHub</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Cricket, Singing, Videography, Podcasts</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; ML & AI Projects Completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/sachin-dimri-25b25b231/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>MSc Applied Statistics and Informatics student at IIT Bombay with hands-on experience in Machine Learning, NLP, Statistical Modeling, Time Series Forecasting, and Generative AI applications. Passionate about solving real-world problems using AI and data-driven approaches.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2025 - July 2025</span>
+						<h2>Machine Learning Intern</h2>
+						<span class="position">NoQs Digital</span>
+						<p class="mt-4">NOQs Digital is a technology solutions company that helps businesses grow through customized digital platforms, AI-powered solutions, mobile/web applications, and digital marketing services.
+
+							<ul>
+                <li>Developed an NLP pipeline to extract and classify disease symptoms from user input.</li>
+
+                <li>Trained and evaluated multiple ML models and achieved 92% accuracy using SVC classification.</li>
+
+                <li>Built personalized recommendation systems for medicines, workouts, precautions, and diet suggestions.</li>
+
+                <li>Implemented preprocessing, feature extraction, and model evaluation using Python and Scikit-learn.</li>
+            </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 - Present</span>
+						<h2>Data Science & AI Projects</h2>
+						<span class="position">IIT Bombay</span>
+						<p class="mt-4">At IIT Bombay, I am actively engaged in advanced Data Science, Machine Learning, and Artificial Intelligence projects as part of my MSc in Applied Statistics and Informatics. My work focuses on applying statistical modeling, predictive analytics, NLP, deep learning, and Generative AI techniques to solve real-world problems.
+							<ul>
+
+                <li>Built Time Series Forecasting models using ARIMA and SARIMA for UPI transaction forecasting.</li>
+
+                <li>Developed GenAI-based News Research Tool using LangChain and semantic retrieval.</li>
+
+                <li>Performed sentiment analysis on 0.2M tweets using NLP and LSTM models.</li>
+
+                <li>Worked on customer segmentation, churn prediction, and biomedical regression analysis projects.</li>
+
+            </ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Positions of Responsibility</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2025 - Present</span>
+						<h2>Class Representative</h2>
+						<span class="position"> MSc Statistics (2nd Year) | IIT Bombay</span>
+						<p class="mt-4">  Serving as the Class Representative for MSc Statistics at IIT Bombay, coordinating academic communication and supporting departmental activities.
+
+
+							<ul>
+
+        <li>
+          Representing a cohort of 43 students and acting as a bridge between students and faculty members.
+        </li>
+
+        <li>
+          Assisting in academic coordination, administrative communication, and departmental decision-making processes.
+        </li>
+
+        <li>
+          Contributing actively to Department Council activities and student engagement initiatives.
+        </li>
+
+        <li>
+          Supporting the planning and management of academic and extracurricular events within the department.
+        </li>
+
+      </ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Oct 2024 - May 2025</span>
+						<h2>Interview Coordinator</h2>
+						<span class="position"> Institute Placement Team | IIT Bombay</span>
+						<p class="mt-4"> Worked as part of the IIT Bombay Placement Team, managing placement operations and coordinating interview processes for campus recruitment.
+
+							<ul>
+
+        <li>
+          Collaborated with a cross-functional team of 250+ members to support placement activities for over 2,300 students.
+        </li>
+
+        <li>
+          Coordinated test schedules, interview logistics, and student communication for 20+ recruiting companies.
+        </li>
+
+        <li>
+          Assisted in resolving student queries and ensuring smooth execution of placement-related processes.
+        </li>
+
+        <li>
+          Contributed to improving operational efficiency and coordination during campus recruitment drives.
+        </li>
+
+      </ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2024 – 2026</span>
+    					<h2>Master of Science</h2>
+    					<span class="position">Indian Institute of Technology Bombay</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020 – 2023</span>
+    					<h2>Bachelor of Science</h2>
+    					<span class="position">Hemvati Nandan Bahuguna Garhwal University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019 – 2020</span>
+    					<h2>Higher Secondary Education</h2>
+    					<span class="position">SVMIC Srikot Ganganali, Pauri Garhwal</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2018</span>
+    					<h2>Secondary Education</h2>
+    					<span class="position">Uma SVMHSS Karanprayag Chamoli</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1HS7KA9tURM5P47EymvOD5OpHp88wCyGx/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+<section class="ftco-section" id="achievement-section">
+
+  <div class="container">
+
+    <div class="row justify-content-center mb-5 pb-5">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h1 class="big big-2">Achievements</h1>
+
+        <h2 class="mb-4">Scholastic Achievements</h2>
+
+        <p>
+          Academic accomplishments and competitive achievements reflecting strong analytical, mathematical, and problem-solving abilities.
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+      <!-- IIT JAM AIR -->
+
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="resume-wrap">
+
+          <span class="date">2024</span>
+
+          <h2>AIR 24 – IIT JAM</h2>
+
+          <p class="mt-4">
+            Secured All India Rank 24 in IIT JAM (Mathematical Statistics) among 3,536 candidates conducted by IIT Madras.
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- IIT JAM Mathematics -->
+
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="resume-wrap">
+
+          <span class="date">2024</span>
+
+          <h2>95.25 Percentile</h2>
+
+          <p class="mt-4">
+            Achieved 95.25 percentile in IIT JAM Mathematics examination among 14,146 candidates conducted by IIT Madras.
+          </p>
+
+        </div>
+
+      </div>
+
+<!-- GATE DA Qualified -->
+
+<div class="col-md-4 d-flex ftco-animate">
+
+  <div class="resume-wrap">
+
+    <span class="date">2026</span>
+
+    <h2>GATE DA Qualified</h2>
+
+    <p class="mt-4">
+      Qualified GATE (Data Science & Artificial Intelligence) examination, demonstrating strong proficiency in Mathematics, Statistics, Machine Learning, Artificial Intelligence, and Data Science concepts.
+    </p>
+
+  </div>
+
+</div>
+
+      <!-- INSPIRE -->
+
+      <div class="col-md-4 d-flex ftco-animate">
+
+        <div class="resume-wrap">
+
+          <span class="date">2020</span>
+
+          <h2>INSPIRE Scholar</h2>
+
+          <p class="mt-4">
+            Awarded INSPIRE Scholarship by DST, Government of India for securing a position among the top 1 percentile students in Class XII.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="ftco-section" id="certification-section">
+
+  <div class="container">
+
+    <div class="row justify-content-center mb-5 pb-5">
+
+      <div class="col-md-7 heading-section text-center ftco-animate">
+
+        <h1 class="big big-2">Certificates</h1>
+
+        <h2 class="mb-4">Certifications</h2>
+
+        <p>
+          Professional certifications and continuous learning experiences in Data Science, AI, Analytics, and Visualization tools.
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+      <!-- One Fourth Labs -->
+
+      <div class="col-md-6 d-flex ftco-animate">
+
+        <div class="resume-wrap">
+
+          <span class="date">IIT Madras</span>
+
+          <h2>Foundations of Data Science</h2>
+
+          <p class="mt-4">
+            Completed a comprehensive certification program by One Fourth Labs covering statistical foundations, Machine Learning concepts, predictive analytics, and Data Science workflows.
+          </p>
+
+        </div>
+
+      </div>
+
+<!-- Advanced Excel -->
+
+<div class="col-md-6 d-flex ftco-animate">
+
+  <div class="resume-wrap">
+
+    <span class="date">IIT Bombay | AZeotropy </span>
+
+    <h2>Advanced Excel Workshop</h2>
+
+    <p class="mt-4">
+      Successfully completed an Advanced Excel Workshop organized by AZeotropy, IIT Bombay, covering advanced spreadsheet operations, data analysis, visualization techniques, formulas, pivot tables, and business reporting workflows.
+    </p>
+
+  </div>
+
+</div>
+
+      <!-- Power BI -->
+
+      <div class="col-md-6 d-flex ftco-animate">
+
+        <div class="resume-wrap">
+
+          <span class="date">Skill Nation</span>
+
+          <h2>AI Dashboards using Microsoft Power BI</h2>
+
+          <p class="mt-4">
+            Learned advanced dashboard development, business intelligence reporting, KPI visualization, and data storytelling using Microsoft Power BI.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p> A collection of Machine Learning, NLP, Statistical Modeling, Time Series Forecasting, and Generative AI projects developed during my academic journey at IIT Bombay.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/sonudimri/Telco-Churn-Prediction-Classification" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sonudimri/Telco-Churn-Prediction-Classification">Telco Churn Prediction</a></h3>
+                <p> Developed a customer churn prediction system using Machine Learning models including Logistic Regression, Random Forest, SVM, and XGBoost with an AUC-ROC score of 0.86.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/sonudimri/Time-Series-Forecasting-of-UPI-Transactions" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sonudimri/Time-Series-Forecasting-of-UPI-Transactions">UPI Transaction Forecasting</a></h3>
+                <p>Built ARIMA and SARIMA based Time Series Forecasting models using RBI datasets to analyze seasonal trends and forecast UPI transaction growth.
+</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/sonudimri/GenAI-News-Research-Tool-Using-LangChain" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sonudimri/GenAI-News-Research-Tool-Using-LangChain">GenAI News Research Tool</a></h3>
+                <p>Developed a LangChain-powered RAG application using embeddings, semantic retrieval, and NLP pipelines for intelligent news research and question answering.
+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/sonudimri/ChatGPT-Sentiment-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/sonudimri/ChatGPT-Sentiment-Analysis">ChatGPT Sentiment Analysis</a></h3>
+				  <p>Performed sentiment analysis on over 0.2 million tweets using NLP techniques, TF-IDF vectorization, Logistic Regression, and LSTM-based deep learning models.
+</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/sonudimri/Clustering-for-Market-Segmentation" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/sonudimri/Clustering-for-Market-Segmentation">Customer Segmentation using clustering model</a></h3>
+				  <p>Applied K-Means clustering, hierarchical clustering, and statistical analysis techniques to identify high-value customer segments.
+</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="12">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Research</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Passionate about solving real-world problems using Artificial Intelligence,
+              Machine Learning, NLP, Statistical Modeling, and Data-Driven Solutions. </h4>
+						<br>
+						<p><a href="https://github.com/sonudimri?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Feel free to connect with me for internships, research collaborations, Machine Learning projects, AI opportunities, or professional discussions.
+</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><a href = "#"> Mumbai, India</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 8791974635</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sachin111202dimri@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1HS7KA9tURM5P47EymvOD5OpHp88wCyGx/view?usp=drive_link">resume link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Let’s Connect  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSekhslkbTTroOwtnOENQaUZdixOva6a1wPgLqO9QH0wuyNEeA/viewform?usp=publish-editor" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCzLmStesNfjbdDfN0TAcrLA"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sachin-dimri-25b25b231/?skipRedirect=true"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><p>
+© 2026 Sachin Dimri | Machine Learning Engineer & Data Scientist | IIT Bombay
+</p></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+ScrollReveal().reveal('.ftco-animate', {
+    distance: '50px',
+    duration: 1200,
+    easing: 'ease-in-out',
+    origin: 'bottom',
+    interval: 150
+});
+</script>
+	<script>
+const cursorGlow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+    cursorGlow.style.left = e.clientX + "px";
+    cursorGlow.style.top = e.clientY + "px";
+});
+</script>
+<script>
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', function(e) {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
+</script>
+<div class="custom-cursor"></div>
+<script>
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+</body>
+<div class="custom-cursor"></div>
+</html>
